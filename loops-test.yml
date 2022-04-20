@@ -6,7 +6,7 @@
       win_chocolatey:
         name: "{{ item }}"
         state: present
-        log_path: c:\ansible_choco.txt
+        #log_path: c:\ansible_choco.txt
       loop:
         - jre8
         - notepadplusplus
