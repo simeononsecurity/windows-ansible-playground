@@ -2,9 +2,9 @@
 - name: Install Software
   hosts: all
   tasks:
-    - name: Install Software {{ item }}
+    - name: Install Software "{{ item }}"
       win_chocolatey:
-        name: {{ item }}
+        name: "{{ item }}"
         state: present
         log_path: c:\ansible_choco.txt
       loop:
