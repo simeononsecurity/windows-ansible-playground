@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: "{{ item }}"
-      win_chocolatey:
+      chocolatey.chocolatey.win_chocolatey:
         name: "{{ item }}"
         state: present
         #log_path: c:\ansible_choco.txt
