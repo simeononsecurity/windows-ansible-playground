@@ -8,5 +8,5 @@
           - SecurityUpdates
           - CriticalUpdates
           - UpdateRollups
-        reboot: no
+        reboot: yes
         log_path: c:\ansible_wu.txt
