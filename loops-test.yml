@@ -2,7 +2,7 @@
 - name: Install Software
   hosts: all
   tasks:
-    - name: Install Software "{{ item }}"
+    - name: "{{ item }}"
       win_chocolatey:
         name: "{{ item }}"
         state: present
