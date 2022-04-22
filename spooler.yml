@@ -1,0 +1,6 @@
+---
+- name: A sample playbook for illustration
+  hosts: all
+  roles: 
+    - spooler
+        

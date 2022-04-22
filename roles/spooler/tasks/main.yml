@@ -1,0 +1,6 @@
+---
+# tasks file for base
+- name: A sample task for example playbooks
+  win_service:
+    name: spooler
+    state: started

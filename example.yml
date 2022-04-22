@@ -1,9 +1,0 @@
----
-- name: A sample playbook for illustration
-  hosts: all
-  tasks:
-    - name: A sample task for example playbooks
-      win_service:
-        name: spooler
-        state: started
-        
