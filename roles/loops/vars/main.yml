@@ -1,2 +1,7 @@
 ---
 # vars file for base
+software:
+  - jre8
+  - notepadplusplus
+  - firefoxesr
+  - googlechrome

@@ -1,13 +1,6 @@
 ---
 # tasks file for base
-- name: "{{ item }}"
+- name: Installing software using Chocolatey
   chocolatey.chocolatey.win_chocolatey:
-    name: "{{ item }}"
+    name: "{{ software }}"
     state: present
-    log_path: c:\ansible_choco.txt
-  loop:
-    - jre8
-    - notepadplusplus
-    - firefoxesr
-    - googlechrome
-  
