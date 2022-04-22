@@ -5,9 +5,7 @@
     name: "{{ software }}"
     state: present
     allow_empty_checksums: yes
-    allow_multiple: yes
     force: yes
-    validate_certs: no
 - name: Upgrade installed packages
   win_chocolatey:
     name: all
