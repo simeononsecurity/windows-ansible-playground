@@ -4,8 +4,11 @@
   chocolatey.chocolatey.win_chocolatey:
     name: "{{ software }}"
     state: present
-    version: latest
     allow_empty_checksums: yes
     allow_multiple: yes
     force: yes
     validate_certs: no
+- name: Upgrade installed packages
+  win_chocolatey:
+    name: all
+    state: latest
